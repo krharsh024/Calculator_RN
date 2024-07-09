@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Calculate(input:String) => {
+export default function Calculate(input:String) {
     const operators = ['+', '-', '*', '/'];
     const inputArray = input.split(' ');
     const num1 = Number.parseInt(inputArray[0]);

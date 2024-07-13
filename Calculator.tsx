@@ -26,7 +26,7 @@ const [val,setVal]=useState("")
                 </Text>
             </TouchableHighlight>
 
-            <TouchableHighlight>
+            <TouchableHighlight onPress={()=>setVal(val.substring(0,val.length-1))}>
                 <Text style={[style.button,style.topmost]}>DEL</Text>
             </TouchableHighlight>
 
@@ -102,7 +102,7 @@ const [val,setVal]=useState("")
 
             <TouchableHighlight 
            
-            onPress={()=>setVal(eval(val).toString())}
+            onPress={()=>setVal((eval(val)).toString())}
             >
                 <Text 
                  style={[style.button,style.operators]}>=</Text>
